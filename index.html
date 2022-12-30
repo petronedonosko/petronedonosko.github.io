@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .confetti{
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+        border: 0px;
+        user-select: none;
+    }    
+  </style>
+	<!-- Demo CSS -->
+	<link rel="stylesheet" href="css/demo.css">
+</head>
+<body>
+  <div class="border-0">
+    <div class="fixed top-0 left-0 right-0">
+      <video id="showplayer" autoplay muted loop>
+        <source src="video/show1-2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="fixed top-0 left-0 right-0">
+      <canvas class="confetti" id="canvas"></canvas>
+    </div>
+    <div class="fixed top-3/4 left-0 right-0">
+      <p class=""/>
+      <div class="bg-gray-20 px-4 py-3 text-center sm:px-6">
+        <button id="activator" type="submit" class="inline-flex justify-center rounded-md border border-transparent bg-pink-400 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-200 focus:ring-offset-2">
+          Happy New Year 2023!
+        </button>
+      </div>
+    </div>
+    <div class="fixed bottom-0 inset-x-0 w-full">
+      <!-- div class="absolute top-[100px] h-32 w-full" -->
+        <footer class="credit">
+          Site author: <a title="Peter Nedonosko" href="https://github.com/pnedonosko" target="_blank">Peter Nedonosko</a>. Creative author and video editor: <a title="lxrykxlya.ae" href="https://www.tiktok.com/@lxrykxlya.ae" target="_blank">lxrykxlya.ae</a>. Confetti author: <a title="Awesome web design code & scripts" href="https://www.codehim.com/animation-effects/javascript-confetti-explosion-effect/" target="_blank">Nicholas Suski</a>
+        </footer>
+      <!-- /div -->
+    </div>
+  </div>
+
+  <!-- Confetti JS -->
+  <script src="js/confetti.js"></script>
+</body>
+</html>
